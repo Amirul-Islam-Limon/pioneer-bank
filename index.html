@@ -8,6 +8,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <section id="login-section">
+            <h1 class="text-center heading">Welcome To Pioneer Bank</h1>
+
+            <div class="submit-area">
+                <h5>Login</h5>
+                <input class="form-control" placeholder="Email" type="text" name="email" id=""><br>
+                <input class="form-control" placeholder="Password" type="password" name="password" id=""><br>
+                <button id="enter-button" class="btn btn-success">Enter</button>
+            </div>
+        </section>
+
+        <section id="transition-section">
+            <div class="row countArea">
+                <div class="col-md-4">
+                    <div class="deposit">
+                        <h5>Deposit</h5>
+                        <h1>$00</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw">
+                        <h5>WithDraw</h5>
+                        <h1>$00</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance">
+                        <h5>Balance</h5>
+                        <h1>$1240</h1>
+                    </div>
+                </div>
+            </div>
+
+            <section class="input-field-section">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="input-field">
+                            <h5>Deposit</h5>
+                            <input type="text" name="" id="" class="form-control" placeholder="$ amount you want to deposit !"><br>
+                            <button class="btn btn-success">Deposit</button><br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-field">
+                            <h5>Withdraw</h5>
+                            <input type="text" name="" id="" class="form-control" placeholder="$ amount you want to withdraw !"><br>
+                            <button class="btn btn-success">WithDraw</button><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+    </main>
+
+    <script>
+        function displayNone(){
+            let submitArea = document.getElementById("login-section")
+            submitArea.style.display = 'none';
+            let transitionSection = document.getElementById("transition-section")
+            transitionSection.style.display = "block"
+        }
+        let enterButton = document.getElementById("enter-button")
+        enterButton.addEventListener("click", displayNone)
+    </script>
 </body>
 </html>

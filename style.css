@@ -1,0 +1,45 @@
+.heading{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.submit-area h5{
+    padding-bottom: 20px;
+}
+.submit-area{
+    box-shadow: 2px 2px 10px  gray;
+    margin-top: 40px;
+    width: 60%;
+    margin:0 auto;
+    padding:20px;
+    border-radius: 8px;
+}
+#transition-section{
+    display: none;
+}
+.countArea{
+    margin: 0 100px;
+}
+.deposit, .withdraw, .balance{
+    padding:30px;
+    margin:100px 20px 0 20px;
+    border-radius: 8px;
+    color: white;
+}
+.deposit{
+    background-color: blue;
+}
+.withdraw{
+    background-color: salmon;
+}
+.balance{
+    background-color: orange;
+}
+.input-field{
+    box-shadow: 2px 2px 10px gray;
+    margin:20px;
+    padding:25px;
+    border-radius: 8px;
+}
+.input-field-section{
+    margin: 50px 100px 50px 100px;
+}
